@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Check if there is an existing impression count in local storage
+            let impressionCount = localStorage.getItem("impressionCount");
+
+            // If no count exists, set it to 0
+            if (impressionCount === null) {
+                impressionCount = 0;
+            }
+
+            // Increment the impression count
+            impressionCount++;
+
+            // Update the count in local storage
+            localStorage.setItem("impressionCount", impressionCount);
+
+            // Display the count on the page
+            document.getElementById("impressionCount").innerText = impressionCount;
+        });
+    </script>
+
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZD25CQ9194"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZD25CQ9194');
+</script>
+<style>
+    .dark-icon {
+        color: #000000; /* This will make the icon darker */
+        text-shadow: 1px 1px 2px #555; /* This will give the icon a 3D effect */
+    }
+</style>
+	<title>Aravind Balachandar Portfolio</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<link rel="stylesheet" href="css/aos.css">
+
+	<link rel="stylesheet" href="css/ionicons.min.css">
+
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script defer src="/_vercel/insights/script.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	<p>Number of Impressions: <span id="impressionCount">0</span></p>
+
+
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">AB</a>
+			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav nav ml-auto">
+					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+					<li class="nav-item"><a href="#resume-section" class="nav-link"><span>Education & Experience</span></a></li>
+					<li class="nav-item"><a href="#services-section" class="nav-link"><span>Services</span></a></li>
+					<li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
+					<li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
+					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+					<li class="ftco-animate" style="font-size: 24px; margin-right: 20px;"><a href="https://github.com/aravind0402" target="_blank"><span class="icon-github"></span></a></li>
+					<li class="ftco-animate" style="font-size: 24px;"><a href="https://www.linkedin.com/in/aravind-balachandar/" target="_blank"><span class="icon-linkedin"></span></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<section id="home-section" class="hero">
+		<div class="home-slider  owl-carousel">
+			<div class="slider-item ">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
+						data-scrollax-parent="false">
+						<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/32DB7611-B846-4374-A9A3-CCA1AD2A16D4.JPG);background-size: 450px 450px;background-position-y: 30%;">
+							<div class="overlay"></div>
+						</div>
+						<div class="one-forth d-flex  align-items-center ftco-animate"
+							data-scrollax=" properties: { translateY: '70%' }">
+							<div class="text">
+								<span class="subheading">Hello!</span>
+								<h1 class="mb-4 mt-3">I'm <span>Aravind Balachandar</span></h1>
+								<h2>I'm a
+									<span class="txt-rotate" data-period="100"
+										data-rotate='["Data Engineer.", "Machine Learning Engineer", "Data Scientist.", "Data Analyst."]'></span>
+								</h2>
+								<p><a href="https://www.linkedin.com/in/aravind-balachandar/" target="_blank" class="btn btn-primary py-3 px-4">Hire me</a> <a href="#projects-section"
+										class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+							</div>
+
+						</div>
+					</div>
+				</div>
+	</section>
+
+	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+		<div class="container">
+			<div class="row d-flex">
+				<div class="col-md-6 col-lg-5 d-flex">
+					<div class="img-about img d-flex align-items-stretch">
+						<div class="overlay"></div>
+						<div class="img d-flex align-self-stretch align-items-center"
+							style="background-image:url(images/IMG-20220818-WA0034.jpg);">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+					<div class="row justify-content-start pb-3">
+						<div class="col-md-12 heading-section ftco-animate">
+							<h1 class="big">About</h1>
+							<h2 class="mb-4">About Me</h2>
+							<p>I am a Data Scientist with the domain expertise in Data analysis, Data Visualisation,
+								Data Modelling, constructing data pipeline and building machine learning modules.</p>
+							<ul class="about-info mt-4 px-md-0 px-2">
+								<li class="d-flex"><span>Name:</span> <span>Aravind Balachandar</span></li>
+								<li class="d-flex"><span>Address:</span> <span>Buffalo NY USA</span></li>
+								<li class="d-flex"><span>Zip code:</span> <span>14226</span></li>
+								<li class="d-flex"><span>Email:</span> <span>balacha2@buffalo.edu</span></li>
+								<li class="d-flex"><span>Phone: </span> <span>+1-716-400-7802</span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="counter-wrap ftco-animate d-flex mt-md-3">
+						<div class="text">
+
+							<p><a href="images/Aravind_Balachandar_Resume.pdf" download="Aravind Balachandar Resume"
+									target="_blank" class="btn btn-primary py-3 px-3">Download CV</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section ftco-no-pb" id="resume-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-10 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Education & Experience</h1>
+					<h2 class="mb-4">Education & Experience</h2>
+					
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 animated fadeInUp">
+					<h2 class="fw-normal section-heading font-grey"></h2>
+					<ul class="timeline mt-4 pr-md-5">
+						<li class="education">
+							<div class="title">AUG 2023 - Present</div>
+							<div class="details">
+								<h5>Master of Science in Data Science</h5>
+								<small class="organization">University at Buffalo</small>
+								<p><b>Coursework:</b> Statistical Learning and Data Mining, Python for Data Science, Machine Learning, Reinforcement Learning, Data Model Query Language</p>
+							</div>
+						</li>
+						<li class="experience">
+							<div class="title">SEP 2022 - AUG 2023</div>
+							<div class="details">
+								<h5>Software Engineer</h5>
+								<small class="organization">QuickPlay Media</small>
+								<p><b>Responsibilities</b></p>
+								<p>- Drove an impressive 84% enhancement in system performance through comprehensive optimizations on functions, queries, and stored procedures for the Couchbase database.</p>
+								<p>- Streamlined database retrieval processes and reduced response time to an impressive 25% through the development of micro-service.</p>
+								<p>- Led to self-service purging feature when approaching the maximum limit, minimizing developer hours spent on a purging to 20%. </p>
+								<p>- Initiated a feature for instant image information retrieval and rounded corner rendering without diminishing original, cutting processing time by nearly 60%.</p>
+							</div>
+							<div class="title">AUG 2021 - SEP 2022</div>
+							<div class="details">
+								<h5>Application Development Associate</h5>
+								<small class="organization">Accenture</small>
+								<p><b>Responsibilities</b></p>
+								<p>- Spearheaded as a team to innovative design and construction of a content aggregator and expense tracker, yielding a remarkable 71% reduction in code churn.</p>
+								<p>- Innovated caching techniques resulted in a stunning 40% decrease in data access time, reduced latency, cut-down data load, and a 50% boost in total system efficiency.</p>
+								<p>- Tailored unique memory access flows to cater to the unique needs of over 100 clients.</p>
+								
+							</div>
+						</li>
+		
+						<li class="education">
+							<div class="title">JUN 2017 - MAY 2021</div>
+							<div class="details">
+								<h5>Bachelor’s in Computer Science and Engineering</h5>
+								<small class="organization"> Anna University</small>
+								<p><b>Coursework:</b> Machine Learning, Cloud Computing, Data Structures and Algorithm, Database Management, Web
+									Programming, Python, Artificial Intelligence, Java, Computer Networks</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+
+			</div>
+			<div class="row justify-content-center mt-5">
+				<div class="col-md-6 text-center ftco-animate">
+					<p><a href="images/Aravind_Balachandar_Resume.pdf" download=" Aravind Balachandar resume" target="_blank"
+							class="btn btn-primary py-4 px-5">Download CV</a></p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section" id="services-section">
+		<div class="container">
+			<div class="row justify-content-center py-5 mt-5">
+				<div class="col-md-12 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Area Of Expertise</h1>
+					<h2 class="mb-4">Area Of Expertise</h2>
+					
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 text-center d-flex ftco-animate">
+					<a href="#" class="services-1">
+						
+						<div class="desc">
+							<h3 class="mb-5">Data Analyst</h3>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 text-center d-flex ftco-animate">
+					<a href="#" class="services-1">
+						
+						<div class="desc">
+							<h3 class="mb-5">Data Engineering</h3>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 text-center d-flex ftco-animate">
+					<a href="#" class="services-1">
+						
+						<div class="desc">
+							<h3 class="mb-5">Data Scientist</h3>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-md-4 text-center d-flex ftco-animate">
+					<a href="#" class="services-1">
+						
+						<div class="desc">
+							<h3 class="mb-5">Machine Learning</h3>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 text-center d-flex ftco-animate">
+					<a href="#" class="services-1">
+						
+						<div class="desc">
+							<h3 class="mb-5">Business Intelligence</h3>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 text-center d-flex ftco-animate">
+					<a href="#" class="services-1">
+						
+						<div class="desc">
+							<h3 class="mb-5">Software Development Engineer</h3>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="ftco-section" id="skills-section">
+
+		<div class="skills-section sections" id='skills'>
+			<div class="container py-3">
+				<h1 class="text-center section-heading  font-light animated fadeIn">
+					Skills</h1>
+				<div class="row py-3">
+					<div class="col-lg-4">
+						<div class='px-lg-3 skill-tab'>
+							<h4 class="wow fadeInUp skill-heading">Programming Languages & Cloud</h4>
+							<div class="row">
+								<div class="col-4">
+									<img src="images/python.png">
+
+								</div>
+								<div class="col-4">
+									<img src="images/rstudio-original.png">
+									<p>R studio</p>
+
+								</div>
+								<div class="col-4">
+									<img src="images/SQL.png">
+									<p>  SQL</p>
+									
+								</div>
+								<div class="col-4">
+									<img src="images/icons8-amazon-web-services-48.png" />
+									<p>AWS Cloud</p>
+									
+								</div>
+								<div class="col-4">
+									<img src="images/icons8-github-48.png">
+									<p>GitHub</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class='px-lg-3 skill-tab'>
+							<h4 class="wow fadeInUp skill-heading">DATABASE TECHNOLOGIES</h4>
+							<div class='row'>
+								<div class="col-4">
+									<img src="images/mysql-original-wordmark.png" />
+									
+								</div>
+								<div class="col-4">
+									<img src="images/neo4j.png" />
+									
+								</div>
+								<div class="col-4">
+									<img src="images/mongodb-plain-wordmark.png" />
+									
+								</div>
+								<div class="col-4">
+									<img src="images/icons8-microsoft-sql-server-48.png" />
+									<p>Sql Server</p>
+									
+								</div>
+								<div class="col-4">
+									<img src="images/cassandra (1).png" />
+									
+								</div>
+								<div class="col-4">
+									<img src="images/postgresql-plain-wordmark.png" />
+									
+								</div>
+								<div class="col-4">
+									<img src="images/icons8-oracle-logo-48.png" />
+									
+								</div>
+								<div class="col-4">
+									<img src="images/icons8-redis-48.png" />
+									<p>Redis</p>
+									
+								</div>
+								<div class="col-4">
+									<img src="images/influxdb_logo.png" />
+									
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class='px-lg-3 skill-tab'>
+							<h4 class="wow fadeInUp skill-heading"> DATAWAREHOUSING TOOLS</h4>
+							<div class='row'>
+								<div class="col-4">
+									<img src="images/Kafka.png" />
+									
+								</div>
+								<div class="col-4">
+									<img src="images/airflow.512x512.png" />
+									<p>Airflow</p>
+									
+								</div>
+								<div class="col-4">
+									<img src="images/apache_nifi_logo_icon_167863.png" />
+									
+								</div>
+								<div class="col-4">
+									<img src="images/spark-white.png" />
+									<p>Kibana</p>
+								</div>
+								
+								                                                                              
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class='px-lg-3 skill-tab'>
+							<h4 class="wow fadeInUp skill-heading">VISUALISATION TOOLS</h4>
+							<div class='row'>
+								<div class="col-4">
+									<img title="Amazon Web Services"
+										src="images/icons8-tableau-software-48.png" />
+									<p title="Amazon Web Services">Tableau</p>
+								</div>
+								<div class="col-4">
+									<img src="images/icons8-power-bi-48.png" />
+									<p>Power BI</p>
+								</div>
+								<div class="col-4">
+									<img src="images/grafana-original-wordmark.png" />
+									
+								</div>
+								<div class="col-4">
+									<img src="images/elasticco_kibana.png" />
+									<p>Kibana</p>
+									
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="ftco-section ftco-project" id="projects-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-12 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Projects</h1>
+					<h2 class="mb-4"> Projects</h2>
+					
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
+						style="background-image: url(images/shutterstock_1165586542.jpg);">
+						<div class="overlay"></div>
+						<div class="text text-center p-4">
+							<h3>Stock Market Prediction </h3>
+							<span>Python, Machine Learning, Streamlit</span>
+							<div class="links">
+								<a href="https://stock-market-pred.streamlit.app/" target="_blank" class="live-link">
+									<!-- <img src="images/live-demo.jpg" alt="Live Demo" style="width:50px;height:60px;"> -->
+									<i class="fas fa-play-circle fa-2x dark-icon"><h6>Live</h6></i>
+								</a>
+								<a href="https://github.com/aravind0402/stock_market_pred" target="_blank" class="github-link">
+									<!-- <img src="images/github-logo.png" alt="GitHub" style="width:px;height:1000px;"> -->
+									<i class="fab fa-github fa-2x dark-icon"><h6>Github</h6></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<a href="https://github.com/aravind0402/netflix_recommender" target="_blank">
+						<div class="project img ftco-animate d-flex justify-content-center align-items-center"
+							style="background-image: url(images/Netflix_recommender.jpg);">
+							<div class="overlay"></div>
+							<div class="text text-center p-4">
+								<h3>Netflix-Shows-Movies-Recommender </h3>
+								<span>Python, Machine Learning, Streamlit</span>
+								<div class="links">
+									<a href="netflix-recommender.streamlit.app/" target="_blank" class="live-link">
+										<i class="fas fa-play-circle fa-2x dark-icon"><h6>Live</h6></i>
+									</a>
+									<a href="https://github.com/aravind0402/netflix_recommender" target="_blank" class="github-link">
+										<i class="fab fa-github fa-2x dark-icon"><h6>Github</h6></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4">
+					<a href="" target="_blank">
+						<div class="project img ftco-animate d-flex justify-content-center align-items-center"
+						style="background-image: url(images/bike_sharing.jpg);">
+							<div class="overlay"></div>
+							<div class="text text-center p-4">
+								<h3>Bike Rental Prediction and Analysis</h3>
+								<span>Data Analytics and Machine Learning</span>
+							<div class="links">
+								<!-- <a href="https://stock-market-pred.streamlit.app/" target="_blank" class="live-link"> -->
+									<!-- <i class="fas fa-play-circle fa-2x dark-icon"><h6>Live</h6></i> -->
+								</a>
+								<a href="https://github.com/aravind0402/Bike_sharing_Analysis" target="_blank" class="github-link">
+									<i class="fab fa-github fa-2x dark-icon"><h6>Github</h6></i>
+								</a>
+							</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4">
+					<a href="" target="_blank">
+						<div class="project img ftco-animate d-flex justify-content-center align-items-center"
+							style="background-image: url(images/market_basket.jpg);">
+							<div class="overlay"></div>
+							<div class="text text-center p-4">
+								<h3>Market Basket Analysis</h3>
+								<span>Machine Learning</span>
+							<div class="links">
+								<!-- <a href="https://stock-market-pred.streamlit.app/" target="_blank" class="live-link"> -->
+									<!-- <i class="fas fa-play-circle fa-2x dark-icon"><h6>Live</h6></i> -->
+								<!-- </a> -->
+								<a href="https://github.com/aravind0402/market_basket" target="_blank" class="github-link">
+									<i class="fab fa-github fa-2x dark-icon"><h6>Github</h6></i>
+								</a>
+							</div>
+							</div>
+						</div>
+					</a>
+				</div>		
+				<div class="col-md-4">
+					<a href="https://github.com/aravind0402/age_gender_emotion_recognition" target="_blank" class="live-link">
+						<div class="project img ftco-animate d-flex justify-content-center align-items-center"
+							style="background-image: url(images/sentiment.jpg);">
+							<div class="overlay"></div>
+							<div class="text text-center p-4">
+								<h3>Age, Gender, Emotion Recognition </h3>
+								<span>Machine Learning & openCV</span>
+							<div class="links">
+								<!-- <a href="https://stock-market-pred.streamlit.app/" target="_blank" class="live-link"> -->
+									<!-- <i class="fas fa-play-circle fa-2x dark-icon"><h6>Live</h6></i> -->
+								<!-- </a> -->
+								<a href="https://github.com/aravind0402/age_gender_emotion_recognition" target="_blank" class="github-link">
+									<i class="fab fa-github fa-2x dark-icon"><h6>Github</h6></i>
+								</a>
+							</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<!-- <div class="col-md-4">
+					<a href="https://github.com/akashganesan1/Flight-Price-Prediction" target="_blank">
+						<div class="project img ftco-animate d-flex justify-content-center align-items-center"
+							style="background-image: url(images/15_air_ticket_price_prediction.png);">
+							<div class="overlay"></div>
+							<div class="text text-center p-4">
+								<h3>Flight-Price-Prediction</h3>
+								<span>Machine Learning</span>
+							</div>
+						</div>
+					</a>
+				</div> -->
+				<!-- <div class="col-md-4">
+					<a href="https://github.com/akashganesan1/Northeastern-University-Student-connect" target="_blank">
+						<div class="project img ftco-animate d-flex justify-content-center align-items-center"
+							style="background-image: url(images/Northeastern_University.jpg);">
+							<div class="overlay"></div>
+							<div class="text text-center p-4">
+								<h3>Northeastern-University-Student-connect</h3>
+								<span>Database management and Data Analysis</span>
+							</div>
+						</div>
+					</a>
+				</div> -->
+				
+			</div>
+		</div>
+	</section>
+
+
+
+	<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Contact</h1>
+					<h2 class="mb-4">Contact Me</h2>
+					
+				</div>
+			</div>
+
+			<div class="row d-flex contact-info mb-5">
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-map-signs"></span>
+						</div>
+						<h3 class="mb-4">Address</h3>
+						<p>155 Callodine Avenue, Amherst, NY 14226</p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-phone2"></span>
+						</div>
+						<h3 class="mb-4">Contact Number</h3>
+						<p><a href="tel://1234567920">+1-716-400-7802</a></p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-paper-plane"></span>
+						</div>
+						<h3 class="mb-4">Email Address</h3>
+						<p><a href="mailto:info@yoursite.com">balacha2@buffalo.edu</a></p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-globe"></span>
+						</div>
+						<h3 class="mb-4">Website</h3>
+						<p><a href="#">github.io/aravind0402.com</a></p>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</section>
+
+
+	<footer class="ftco-footer ftco-section">
+		<div class="container">
+			<div class="row mb-5">
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4">
+						
+						<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+							<li class="ftco-animate"><a href="mailto:balacha2@buffalo.edu"><span class="icon-mail_outline"></span></a></li>
+							<li class="ftco-animate"><a href="https://www.linkedin.com/in/aravind-balachandar/" target="_blank"><span class="icon-linkedin"></span></a></li>
+							<li class="ftco-animate"><a href="https://github.com/aravind0402"><span class="icon-github"></span></a></li>
+						</ul>
+					</div>
+				</div>
+
+		</div>
+	</footer>
+
+
+
+	<!-- loader -->
+	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+				stroke="#F96D00" />
+		</svg></div>
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
