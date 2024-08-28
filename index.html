@@ -2,27 +2,6 @@
 <html lang="en">
 
 <head>
-	<script>
-        document.addEventListener("DOMContentLoaded", function () {
-            // Check if there is an existing impression count in local storage
-            let impressionCount = localStorage.getItem("impressionCount");
-
-            // If no count exists, set it to 0
-            if (impressionCount === null) {
-                impressionCount = 0;
-            }
-
-            // Increment the impression count
-            impressionCount++;
-
-            // Update the count in local storage
-            localStorage.setItem("impressionCount", impressionCount);
-
-            // Display the count on the page
-            document.getElementById("impressionCount").innerText = impressionCount;
-        });
-    </script>
-
 	<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZD25CQ9194"></script>
 <script>
@@ -65,9 +44,6 @@
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-	<p>Number of Impressions: <span id="impressionCount">0</span></p>
-
-
 	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
 		<div class="container">
 			<a class="navbar-brand" href="index.html">AB</a>
@@ -135,7 +111,7 @@
 						<div class="col-md-12 heading-section ftco-animate">
 							<h1 class="big">About</h1>
 							<h2 class="mb-4">About Me</h2>
-							<p>I am a Data Scientist with the domain expertise in Data analysis, Data Visualisation,
+							<p>I am a Data Scientist, Machine Learning Engineer with the domain expertise in GenAI, LLMs, Data analysis, Data Visualisation,
 								Data Modelling, constructing data pipeline and building machine learning modules.</p>
 							<ul class="about-info mt-4 px-md-0 px-2">
 								<li class="d-flex"><span>Name:</span> <span>Aravind Balachandar</span></li>
@@ -170,6 +146,18 @@
 				<div class="col-md-12 animated fadeInUp">
 					<h2 class="fw-normal section-heading font-grey"></h2>
 					<ul class="timeline mt-4 pr-md-5">
+						<li class="experience">
+							<div class="title">MAY 2024 - AUG 2024</div>
+							<div class="details">
+								<h5>Machine Learning Engineer Intern</h5>
+								<small class="organization">Zummit Africa</small>
+								<p><b>Responsibilities</b></p>
+								<p>• Engineered and deployed a chatbot utilizing fine-tuned LLMs, including LLAMA 2 and GenAI, with advanced NLU, NLP and transformer techniques, achieving a 90% effectiveness rate in generating contextually relevant responses.</p>
+								<p>• Achieved a 40% increase in user interaction rates by utilizing Retrieval-Augmented Generation (RAG) techniques with Pinecone as vector database and Elasticsearch for full-text search.</p>
+								<p>• Optimized algorithms with GANs using TensorFlow, resulting a 50% reduction in data processing time.</p>
+								<p>• Integrated Copilot into the company’s website, improving real-time coding assistance and context-aware suggestions, resulting in a 35% increase in user productivity and engagement.</p>
+							</div>
+						</li>
 						<li class="education">
 							<div class="title">AUG 2023 - Present</div>
 							<div class="details">
@@ -184,20 +172,20 @@
 								<h5>Software Engineer</h5>
 								<small class="organization">QuickPlay Media</small>
 								<p><b>Responsibilities</b></p>
-								<p>- Drove an impressive 84% enhancement in system performance through comprehensive optimizations on functions, queries, and stored procedures for the Couchbase database.</p>
-								<p>- Streamlined database retrieval processes and reduced response time to an impressive 25% through the development of micro-service.</p>
-								<p>- Led to self-service purging feature when approaching the maximum limit, minimizing developer hours spent on a purging to 20%. </p>
-								<p>- Initiated a feature for instant image information retrieval and rounded corner rendering without diminishing original, cutting processing time by nearly 60%.</p>
+								<p>• Enhanced Couchbase NoSQL performance by 64% through rigorous optimization of functions, queries and stored procedures, leveraging Grafana for performance monitoring and Ansible for streamlined configuration management.</p>
+								<p>• Designed and implemented EPG Golang microservice, reducing program guide data retrieval time from 250 to 110ms.</p>
+								<p>• Developed and integrated a real-time data streaming solution using Apache Kafka and Spark Streaming, which improved data ingestion rates by 70% and enabled near-instantaneous processing of live data feeds.</p>
+								<p>• Engineered CI/CD pipelines with Jenkins and Docker, enhancing build consistency and reducing deployment time by 50%.</p>
 							</div>
-							<div class="title">AUG 2021 - SEP 2022</div>
+							<div class="title">MAR 2021 - SEP 2022</div>
 							<div class="details">
 								<h5>Application Development Associate</h5>
 								<small class="organization">Accenture</small>
 								<p><b>Responsibilities</b></p>
-								<p>- Spearheaded as a team to innovative design and construction of a content aggregator and expense tracker, yielding a remarkable 71% reduction in code churn.</p>
-								<p>- Innovated caching techniques resulted in a stunning 40% decrease in data access time, reduced latency, cut-down data load, and a 50% boost in total system efficiency.</p>
-								<p>- Tailored unique memory access flows to cater to the unique needs of over 100 clients.</p>
-								
+								<p>• Collaborated with team to initiate design and construction of a content aggregator using Kafka, Java and Spring boot yielding 71% reduction in code churn and improving system maintainability.</p>
+								<p>• Architected high-availability custom caching system for OAuth token with Redis and Nginx, resulted in a stunning 40% decrease in data access time, reduced latency, cut-down data load and a 50% boost in system responsiveness.</p>
+								<p>• Streamlined JotForm processing using AWS Lambda, S3 and API Gateway, curtailing costs by 30% by eliminating the need for an EC2 instance.</p>
+								<p>• Optimized data workflows with Apache Spark, boosting processing speed by 45% for large datasets.</p>
 							</div>
 						</li>
 		
@@ -484,6 +472,26 @@
 				</div>
 			</div>
 			<div class="row">
+				<div class="col-md-4">
+					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
+						style="background-image: url(images/Traffic.jpg);">
+						<div class="overlay"></div>
+						<div class="text text-center p-4">
+							<h3>Traffic Flow optimization using multi-agent Reinforcement Learning</h3>
+							<span>Python, OpenAI Gym, A2C, DQN, TraCi</span>
+							<div class="links">
+								<!-- <a href="https://stock-market-pred.streamlit.app/" target="_blank" class="live-link">
+									<img src="images/live-demo.jpg" alt="Live Demo" style="width:50px;height:60px;">
+									<i class="fas fa-play-circle fa-2x dark-icon"><h6>Live</h6></i> 
+								</a> -->
+								<a href="https://github.com/aravind0402/Traffic-flow-optimization-using-multi-agent-RL" target="_blank" class="github-link">
+									<!-- <img src="images/github-logo.png" alt="GitHub" style="width:px;height:1000px;"> -->
+									<i class="fab fa-github fa-2x dark-icon"><h6>Github</h6></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
 				<div class="col-md-4">
 					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
 						style="background-image: url(images/Stock.jpg);">
